@@ -56,6 +56,7 @@ $navbar-default-link-color: white;
 .main-title .main-inner {
   width: 1100px;
   margin: 0 auto;
+  margin-top: -40px;
   padding: 0 24px;
   height: 100%;
 }
@@ -80,23 +81,34 @@ $navbar-default-link-color: white;
 }
 
 .main-title .main-inner .button {
-  width: 280px;
+  width: 200px;
   display: block;
-  height: 50px;
+  height: 45px;
+  line-height: 45px;
   border-radius: 8px;
   text-align: center;
-  margin-left: 0px;
   margin-top: 30px;
-  margin-bottom: 20px;
   background-color: #3f729b;
   color: #fff;
   font-size: 20px;
+}
+
+.main-title .main-inner span a {
+  color: white;
+  margin-top: 5px;
+  text-decoration: none;
 }
 
 .main-title .main-inner p {
   padding-top: 24px;
   font-size: 16px;
 }
+
+.main-title .main-inner p {
+  text-decoration: none;
+}
+
+
 
 
 

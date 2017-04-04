@@ -11,12 +11,20 @@
           <img src="app/assets/images/App-store.png" alt="App-store">
           <img src="images/android-download.png" alt="App-store">
         </div><!-- app-icons -->
-        <div class="button">
-          <span>Sign Up</span>
-        </div>  
-        <p>会員の方はこちらから<a href="log in">ログイン</a></p>
+        
+        <% if user_signed_in? %>
+          #do something
+        <% else %>
+          <div class="button">
+            <span>
+              <%= link_to "Sign up", new_user_registration_path %>
+            </span>
+          </div><!-- button -->  
+          <p>会員の方はこちらから<%= link_to "ログイン", new_user_session_path %></p>
+        <% end %>
+
         <div class="owner-register">
-          <p>家主様はこちらから<a href="#" class="owner">家主様ページ</a></p>
+          <p>家主はこちらから<%= link_to "家主ページ", new_user_session_path %></p>
         </div><!-- owner-register -->
       </div><!-- main-inner -->
     </div><!-- main-title -->
